@@ -1,0 +1,252 @@
+:root{
+    --background:#daddd9;
+    --headerColor:#d0d3db;
+    --kombuGreen:#354230;
+    --heroText:#ebebeb;
+    --profileBorder:#f5f3f4;
+    --headerTextColor:#080828;
+    --h3text:#354230;
+    --ptext:#343a40;
+
+   
+
+}
+img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.font-poppins {
+	font-family: "Poppins", sans-serif;
+}
+
+.font-roboto {
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: var(--background);
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--headerColor);
+}
+
+.time-info {
+	display: flex;
+	column-gap: 0.5rem;
+	align-items: center;
+}
+
+.hero-container {
+	background-color: var(--kombuGreen);
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.hero {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: var(--heroText);
+}
+
+
+
+.profile p {
+	border-radius: 0.5rem;
+	border-width: 1px;
+	border-color: var(--profileBorder);
+	border-style: solid;
+	padding: 0.25rem 0.4rem;
+}
+
+.profile p {
+	border-radius: 0.5rem;
+	border-width: 1px;
+	border-color: var(--profileBorder);
+	border-style: solid;
+}
+
+.content h1 {
+	text-align: center;
+	color: var(--kombuGreen);
+}
+
+.goals {
+	background-color: white;
+	padding: 0.5rem 2rem;
+	border-radius: 0.3rem;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.09);
+	margin-top: 1rem;
+}
+
+
+.content-title h2 {
+	padding: 0 2rem;
+	color: #d1d1ef;
+}
+
+.content-item p {
+	color: var(--ptext);
+}
+
+.content-item h3 {
+	color: var(--h3text);
+	/* text-shadow: 0.1em 0.1em 0.15em;*/
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.links {
+	display: flex;
+	column-gap: 0.5rem;
+}
+
+.links a {
+	text-decoration: none;
+	color: var(--h3text);
+}
+
+.links a:hover {
+	color: #6c757d;
+}
+
+
+/* Mobile styles (0px - 620px) */
+@media (max-width: 620px) {
+	.time-info {
+		font-size: 0.875rem;
+		line-height: 1.25rem;
+	}
+
+	.header {
+		padding: 0 1rem;
+	}
+
+	.hero {
+		width: 100%;
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+
+	.hero h1 {
+		font-size: 2.2rem;
+		margin: 0;
+	}
+
+	.profile p {
+		font-size: 0.85rem;
+		line-height: 1.25rem;
+		padding: 0.2rem 0.4rem;
+	}
+
+	.content {
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.footer {
+		padding: 0.25rem 0.5rem;
+	}
+
+	.links a {
+		font-size: 0.75rem;
+		line-height: 1.25rem;
+	}
+}
+
+/* Tablet styles (621px - 1020px) */
+@media (min-width: 621px) and (max-width: 1020px) {
+	.header {
+		padding: 0 1.5rem;
+	}
+
+	.hero {
+		width: 80%;
+		padding: 4rem 2rem;
+	}
+
+	.hero h1 {
+		font-size: 3.5rem;
+		margin: 0;
+	}
+
+	.profile p {
+		font-size: 1rem;
+		line-height: 1.5rem;
+		padding: 0.25rem 0.4rem;
+	}
+
+	.content {
+		width: 70%;
+		margin: 4rem auto;
+	}
+
+	.footer {
+		padding: 0.25rem 1.5rem;
+	}
+
+	.links a {
+		font-size: 0.9rem;
+		line-height: 1.5rem;
+	}
+}
+
+/* Desktop styles (1021px and above) */
+@media (min-width: 1021px) {
+	.header {
+		padding: 0 1.5rem;
+	}
+
+	.hero {
+		width: 80%;
+		padding: 4rem 2rem;
+	}
+
+	.hero h1 {
+		font-size: 4.5rem;
+		margin: 0;
+	}
+
+	.profile p {
+		font-size: 1rem;
+		line-height: 1.5rem;
+		padding: 0.25rem 0.4rem;
+	}
+
+	.content {
+		width: 60%;
+		margin: 4rem auto;
+	}
+
+	.footer {
+		padding: 0.25rem 1.5rem;
+	}
+
+	.links a {
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+}
